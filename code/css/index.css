@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+	margin: 5px;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+body{
+	font-family: HelveticaNeueW01-45Ligh,Helvetica,Arial,sans-serif;
+}
+#header{
+	position: fixed;
+	z-index: 10000;
+	height: 70px;
+	background-color:#126096;
+	width: 100%;
+	top: 0px;
+}
+#hd_left {
+	position: fixed;
+	height: 70px;
+	z-index: 10000;
+	left: 7%;
+}
+#hd_left a{
+	margin: 5px;
+	float: left;
+	line-height: 70px;
+	vertical-align: middle;
+	font-size: 26px;
+	font-weight:300;
+	letter-spacing: .4px;
+}
+
+#hd_left a:last-child{
+	color: #79C5D6;
+}
+#hd_right{
+	position: fixed;
+	height: 100px;
+	z-index: 10000;
+	right: 3%;
+}
+#hd_right li{
+	float: left;
+	line-height: 70px;
+	margin-right: 15px;
+	vertical-align: middle;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+#hd_right a:hover{
+	color: #ccc;
+}
+li#sing{
+	line-height: 30px;
+	border: 1px white solid;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+}
+#img_banner{
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	z-index: -1;
+	top: 30px;
+	margin-left: 0px auto 0px auto;
+	/* clip: rect(0px,auto,600px,0px); */
+	text-align: center;
+}
+#AG{
+	margin: 610px auto 0;
+	width: 100%;
+	height: 140px;
+	background:rgba(255, 255, 255,0.6);
+}
+#AG h4{
+	color: #146198;
+	text-align: center;
+	margin: 30px 20px 0px 20px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	padding-top: 20px;
+}
+#AG h1{
+	color: #146198;
+	text-align: center;
+	margin: 30px 20px 0px 20px;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+#AG h1{
+	font-size: 60px;
+}
+#container{
+	width: 100%;
+	text-align: center;
+}
+#threeBox{
+	margin: auto;
+	padding: auto;
+	background-color: white;
+}
+#threeBox div{
+	margin: 20px;
+	width: 300px;
+	height: 320px;
+	background-color: #126096;
+	display: inline-block;
+	vertical-align: top;
+}
+#threeBox div h2{
+	color: #D1E0EB;
+	text-align: center;
+	margin: 30px;
+	font-weight: normal;
+}
+#threeBox div p{
+	width: 220px;
+	color: white;
+	margin-left: 40px;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+#threeBox div button{
+	margin: 15px;
+	font-size: 15px;
+	background-color: #6EA4CA;
+	width: 140px;
+	height: 40px;
+	border: 1px;
+}
+#threeBox div button#btn1{
+	margin-top: 30px;
+}
+#threeBox div button#btn2{
+	margin-top: 45px;
+}
+#threeBox div button#btn3{
+	margin-top: 75px;
+}
+#threeBox div a:hover{
+	color: #146198;
+}
+#builder_container{
+	width: 100%;
+	height: 560px;
+	background-color: #D1E0EB;
+	color: #126096;
+	/* text-align: center; */
+}
+#builder{
+	width: 1200px;
+	height: 560px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#builder a{
+	font-size: 17px;
+}
+#builder_head{
+	color: #0C3C60;
+	font-weight: normal;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#start_builder{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 30px;
+}
+#start_builder a:hover{
+	color: #ccc;
+}
+#read_docs{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 30px;
+}
+#read_docs a:hover{
+	color: #ccc;
+}
+#builder button{
+	width: 180px;
+	height: 50px;
+	margin-top: 40px;
+	background: #146198;
+	border: none;
+	color: white;
+	font-size: 16px;
+}
+#contact_container{
+	width: 100%;
+	height: 100px;
+	background-color: #146198;
+	text-align: center;
+}
+#contact{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contact_head{
+	color: white;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 100px;
+	vertical-align: middle;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 450px;
+}
+#contact_con{
+	display: inline-block;
+	vertical-align: top;
+	height: 100px;
+	/* margin-left: 50px; */
+}
+#contact_con div{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-left: 50px;
+}
+#contact_con img{
+	width: 50px;
+}

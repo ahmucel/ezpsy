@@ -1,0 +1,37 @@
+<!-- 运行测试文件 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验页面</title>
+    
+</head>
+<style>
+    *{
+    padding: 0%;
+    margin: 0%;
+    }
+</style>
+<body>
+    <canvas id="toturial" style="background:#fff;border: solid 1px rgb(255, 255, 255)"></canvas>
+</body>
+<script src="https://lib.baomitu.com/keypress/2.1.5/keypress.js"></script>
+<script>
+        let canvas=document.getElementById('toturial');
+        //设置全屏
+        let ctx=canvas.getContext('2d');
+        canvas.width=screen.width;
+        canvas.height=screen.height;
+        var listener = new window.keypress.Listener();
+</script>
+<script src="../js/blockly-src/requestAnimationFrame.js"></script>
+<script src="../js/blockly-src/graph-func.js"></script>
+<script src="../js/blockly-src/systemInformation-func.js"></script>
+<script src="../js/blockly-src/delay-func.js"></script>
+<script src="../js/blockly-src/clearScreen-func.js"></script>
+<script src="../js/blockly-src/control-func.js"></script>
+<script src="../js/blockly-src/data.js"></script>
+<!-- <script src="ceshi.js"></script> -->
+</html>

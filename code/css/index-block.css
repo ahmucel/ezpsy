@@ -1,0 +1,60 @@
+/*body{
+    background-image: url(../images/loginRegister2.png);
+}*/
+/*#block1{
+    background-color: aliceblue;
+    position: absolute;
+    top: 20%;
+    bottom: auto;
+    text-decoration: none;
+}
+#block2{
+    margin-top: 30px;
+}*/
+/*div.form-group{
+    margin-bottom: 30px;
+}
+div.form-group p{
+    text-align: center;
+    font-size: 27px;
+    font-family: "仿宋"
+}*/
+.head-nav{
+    height: 5%;
+}
+.container{
+    position: absolute;
+    top: 49px;
+    background-color: #D1E0EB;
+    width: 100%;
+    height: 98%;
+}
+#tittle{
+    font-size: 250%;
+    color: #0C3C60;
+    font-family: HelveticaNeueW01-45Ligh,Helvetica,Arial,sans-serif;
+    position: relative;
+    left: 2%;
+    top:4%;
+    width: 100%;
+}
+#context{
+    font-size: 150%;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    left: 2%;
+    top:3%;
+}
+#my_project{
+    width: 10%;
+    height: 10%;
+    margin-right: 2%;
+    border: 1px solid white;
+    background-color:white;
+    text-align: center;
+    border-radius: 2%;
+}
+#my_project_context{
+    margin: 30px auto 30px auto;
+}

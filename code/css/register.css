@@ -1,0 +1,21 @@
+body{
+    background-image: url(../images/loginRegister2.png);
+}
+#block1{
+    background-color: aliceblue;
+    position: absolute;
+    top: 20%;
+    bottom: auto;
+    text-decoration: none;
+}
+#block2{
+    margin-top: 30px;
+}
+div.form-group{
+    margin-bottom: 30px;
+}
+div.form-group p{
+    text-align: center;
+    font-size: 27px;
+    font-family: "仿宋"
+}
