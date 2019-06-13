@@ -7,9 +7,6 @@ Blockly.JavaScript['clearscreen'] = function(block) {
     // TODO: Assemble JavaScript into code variable.
     var code = `
         clear_canvas(${value_x},${value_y},${value_width},${value_height});
-        var parent=document.body;
-        var child=document.getElementById("Video");
-        parent.removeChild(child);
     `;
     return code;
   };

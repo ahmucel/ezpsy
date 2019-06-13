@@ -12,3 +12,18 @@ Blockly.Blocks['guide'] = {
    this.setHelpUrl("");
     }
   };
+// 2.实验结束
+Blockly.Blocks['end'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("END");
+    this.appendValueInput("ENDTEXT")
+        .setCheck(null);
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour('#3392FF');
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};

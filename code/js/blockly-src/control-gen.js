@@ -106,3 +106,55 @@ Blockly.JavaScript['endtiming'] = function(block) {
   var code = `console.timeEnd(${value_endtiming});\n`;
   return code;
 };
+// 7.四按键控制
+Blockly.JavaScript['key4'] = function(block) {
+  var value_keydown1 = Blockly.JavaScript.valueToCode(block, 'keydown1', Blockly.JavaScript.ORDER_ATOMIC);
+  var statements_func1 = Blockly.JavaScript.statementToCode(block, 'func1');
+  var value_keydown2 = Blockly.JavaScript.valueToCode(block, 'keydown2', Blockly.JavaScript.ORDER_ATOMIC);
+  var statements_func2 = Blockly.JavaScript.statementToCode(block, 'func2');
+  var value_keydown3 = Blockly.JavaScript.valueToCode(block, 'keydown3', Blockly.JavaScript.ORDER_ATOMIC);
+  var statements_func3 = Blockly.JavaScript.statementToCode(block, 'func3');
+  var value_keydown4 = Blockly.JavaScript.valueToCode(block, 'keydown4', Blockly.JavaScript.ORDER_ATOMIC);
+  var statements_func4 = Blockly.JavaScript.statementToCode(block, 'func4');
+  // TODO: Assemble JavaScript into code variable.
+  var code = `
+  function keyCodeWait(){
+    return  new Promise( function(resolve,reject){
+         listener.simple_combo(${value_keydown1},async function(){
+             ${statements_func1}
+             resolve();
+             listener.unregister_combo(${value_keydown1});
+             listener.unregister_combo(${value_keydown2});
+             listener.unregister_combo(${value_keydown3});
+             listener.unregister_combo(${value_keydown4});
+         })
+         listener.simple_combo(${value_keydown2},async function(){
+             ${statements_func2}
+             resolve();
+             listener.unregister_combo(${value_keydown1});
+             listener.unregister_combo(${value_keydown2});
+             listener.unregister_combo(${value_keydown3});
+             listener.unregister_combo(${value_keydown4});
+         })
+         listener.simple_combo(${value_keydown3},async function(){
+            ${statements_func3}
+            resolve();
+            listener.unregister_combo(${value_keydown1});
+            listener.unregister_combo(${value_keydown2});
+            listener.unregister_combo(${value_keydown3});
+            listener.unregister_combo(${value_keydown4});
+        })
+        listener.simple_combo(${value_keydown4},async function(){
+            ${statements_func4}
+            resolve();
+            listener.unregister_combo(${value_keydown1});
+            listener.unregister_combo(${value_keydown2});
+            listener.unregister_combo(${value_keydown3});
+            listener.unregister_combo(${value_keydown4});
+        })
+     })
+ }
+ await keyCodeWait();\n
+  `;
+  return code;
+};

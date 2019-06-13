@@ -122,3 +122,35 @@ Blockly.Blocks['endtiming'] = {
    this.setHelpUrl("www.taobao.com");
     }
   };
+// 7.四按键控制
+Blockly.Blocks['key4'] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("key4");
+      this.appendValueInput("keydown1")
+          .setCheck(null);
+      this.appendStatementInput("func1")
+          .setCheck(null)
+          .appendField("func1");
+      this.appendValueInput("keydown2")
+          .setCheck(null);
+      this.appendStatementInput("func2")
+          .setCheck(null)
+          .appendField("func2");
+      this.appendValueInput("keydown3")
+          .setCheck(null);
+      this.appendStatementInput("func3")
+          .setCheck(null)
+          .appendField("func3");
+      this.appendValueInput("keydown4")
+          .setCheck(null);
+      this.appendStatementInput("func4")
+          .setCheck(null)
+          .appendField("func4");
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(230);
+   this.setTooltip("");
+   this.setHelpUrl("");
+    }
+  };
