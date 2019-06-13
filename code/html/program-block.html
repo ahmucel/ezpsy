@@ -24,6 +24,8 @@
     <script src="../js/blockly-src/control-gen.js"></script>
     <script src="../js/blockly-src/general.js"></script>
     <script src="../js/blockly-src/general-gen.js"></script>
+    <script src="../js/blockly-src/guide.js"></script>
+    <script src="../js/blockly-src/guide-gen.js"></script>
     <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
 </head>
 <body>
@@ -37,7 +39,7 @@
               <ul>
                   <li><a href="../index.html"><!-- 首页 -->Home</a></li>
                   <li><a href="http://docs.easyun.ltd" target="_Blank"><!-- 用户手册 --> Docs</a></li>
-                  <li><a href="http://imgurl.org/" target="_Blank"><!-- 图床 -->images</a></li>
+                  <li><a href="http://imgx.acgget.com/" target="_Blank"><!-- 图床 -->images</a></li>
                   <li><a href="http://i.loli.net/2019/03/23/5c95864806778.png" target="_Blank">keycode</a></li>
               </ul>
           </div>
@@ -90,6 +92,16 @@
         </div>
     </div>
     <xml id="toolbox" style="display: none">
+        <!-- guide -->
+        <category name="Guide" colour="#3392FF">
+          <block type="guide">
+            <value name="imageUrl">
+              <shadow type="text">
+                <field name="TEXT">http://www.easyun.ltd/img/head-back2.png</field>
+              </shadow>
+            </value>
+          </block>
+        </category>
         <!-- logic -->
         <category name="Logic" colour="%{BKY_LOGIC_HUE}">
             <block type="controls_if"></block>
